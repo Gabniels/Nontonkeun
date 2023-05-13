@@ -1,5 +1,6 @@
 package com.gabniel.data.remote.source.anime
 
+import com.gabniel.data.NetworkBoundResource
 import com.gabniel.data.NetworkResource
 import com.gabniel.data.remote.Response.AnimeItem
 import com.gabniel.data.remote.Response.AnimeResponse
@@ -14,12 +15,30 @@ class AnimeRepositoryImpl @Inject constructor(
     private val remoteDataSource: AnimeRemoteDataSource,
 ) : AnimeRepository {
 
-//    override fun getRecommendationAnime(): Flow<Resource<List<AnimeModel>>> =
-//        object : NetworkResource<List<AnimeModel>, AnimeResponse>() {
+
+//    override fun getRecommendationAnime(): Flow<Resource<List<AnimeModel>>> {
+//        object : NetworkBoundResource<List<AnimeModel>, AnimeResponse>() {
+//            override fun loadFromDB(): Flow<List<AnimeModel>> {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun shouldFetch(data: List<AnimeModel>?): Boolean {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override suspend fun createCall(): Flow<ApiResponse<AnimeResponse>> {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override suspend fun saveCallResult(data: AnimeResponse) {
+//                TODO("Not yet implemented")
+//            }
 //
 //        }
-//
 //    }
+
+    /* cek */
+
 
     //    override fun getRecommendationAnime(): Flow<Resource<List<AnimeModel>>> {
 //        object : NetworkResource<List<AnimeModel>, AnimeResponse>() {
