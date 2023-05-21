@@ -1,4 +1,4 @@
-package com.gabniel.data.remote.Response
+package com.gabniel.data.remote.response
 
 import android.os.Parcelable
 import com.gabniel.data.utils.replaceIfNull
@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class AnimeResponse(
-//    val pagination: Pagination?,
+    val pagination: Pagination?,
     val data: List<AnimeItem>,
 ) : Parcelable
 
@@ -91,26 +91,6 @@ data class EntryItem(
     val url: String?,
     val images: Images?,
     val title: String?,
-) : Parcelable
-
-@Parcelize
-data class Images(
-    val jpg: Jpg?,
-    val webp: Webp?,
-) : Parcelable
-
-@Parcelize
-data class Jpg(
-    val image_url: String?,
-    val small_image_url: String?,
-    val large_image_url: String?,
-) : Parcelable
-
-@Parcelize
-data class Webp(
-    val image_url: String?,
-    val small_image_url: String?,
-    val large_image_url: String?,
 ) : Parcelable
 
 @Parcelize
