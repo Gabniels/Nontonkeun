@@ -16,12 +16,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     }
 
     override fun setupView() {
-
-    }
-
-    override fun initialization() {
+        callFragment(AnimeFragment())
         setupFragment()
     }
+
+    override fun initialization() {}
 
     private fun setupFragment() {
         binding.bottomNavigation.setOnItemSelectedListener { nav ->

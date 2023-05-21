@@ -1,6 +1,6 @@
 package com.gabniel.data.remote.source.anime
 
-import com.gabniel.data.remote.Response.AnimeResponse
+import com.gabniel.data.remote.response.AnimeResponse
 import com.gabniel.data.remote.network.ApiResponse
 import com.gabniel.data.remote.service.AnimeService
 import kotlinx.coroutines.Dispatchers
@@ -25,5 +25,4 @@ class AnimeRemoteDataSource @Inject constructor(
             }
         }.flowOn(Dispatchers.IO)
     }
-
 }
